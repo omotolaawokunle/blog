@@ -1,6 +1,7 @@
 const express = require("express");
 const authRoutes = require("./routes/authRoutes");
 const blogRoutes = require("./routes/blogRoutes");
+const seedRoutes = require("./routes/seedRoutes");
 
 const app = express();
 
@@ -11,6 +12,7 @@ app.use(express.urlencoded({ extended: true }));
 // Routes
 app.use("/api/auth", authRoutes);
 app.use("/api/blogs", blogRoutes);
+app.use("/api/seed", seedRoutes);
 
 // Home route
 app.get("/", (req, res) => {
