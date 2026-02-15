@@ -6,7 +6,9 @@
   "scripts": {
     "start": "node src/server.js",
     "dev": "nodemon src/server.js",
-    "test": "jest --coverage --detectOpenHandles"
+    "test": "jest --coverage --detectOpenHandles",
+    "seed": "node src/seeders/index.js",
+    "seed:clear": "node src/seeders/index.js clear"
   },
   "keywords": [
     "blog",
